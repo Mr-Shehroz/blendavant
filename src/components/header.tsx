@@ -7,68 +7,65 @@ import Link from "next/link";
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
-    const navLinkClass = `${montserrat.className} font-medium 2xl:text-base text-[12px] leading-[100%] text-white hover:text-gray-300 transition-colors duration-200 hover:scale-105`;
+    const navLinkClass = `${montserrat.className} font-medium 2xl:text-base xl:text-[12px] lg:text-[11px] text-[8px] leading-[100%] text-white hover:text-gray-300 transition-colors duration-200 hover:scale-105`;
 
     return (
         <div className="fixed top-0 left-0 w-full z-50">
-            <header className="hidden md:flex 2xl:max-w-[1628px] md:px-6 mx-auto justify-between items-center px-3">
+            <header className="hidden md:flex 2xl:max-w-[1628px] pt-1 lg:pt-0 lg:pl-17 pl-10 2xl:pl-0 mx-auto justify-between items-center px-3">
                 {/* Logo */}
                 <Link href="#">
-                    <Image
+                    <img
                         src="/logo.svg"
                         alt="Logo"
-                        width={287}
-                        height={60}
-                        priority
-                        className="2xl:w-[287px] 2xl:h-[60px] w-[250px] h-[60px]"
+                        className="2xl:max-w-[287px] xl:max-w-[180px] lg:max-w-[150px] max-w-[120px]"
                     />
                 </Link>
 
                 {/* Navigation + Icons */}
-                <div className="flex 2xl:gap-[52px] gap-[40px] items-center">
+                <div className="flex 2xl:gap-[52px] xl:gap-[40px] lg:gap-[25px] gap-[20px] items-center">
                     {/* Navigation */}
-                    <nav className="flex 2xl:gap-6 gap-4 items-center max-w-[476px]">
+                    <nav className="flex 2xl:gap-6 xl:gap-4 lg:gap-3 gap-2 items-center max-w-[476px]">
                         <Link className={navLinkClass} href="#">SHOP ALL</Link>
-                        <div className="w-px 2xl:h-[21px] h-[18px] bg-white" />
+                        <div className="w-px 2xl:h-[21px] lg:h-[18px] h-[12px] bg-white" />
                         <Link className={navLinkClass} href="#">SHOP BY THEME</Link>
-                        <div className="w-px 2xl:h-[21px] h-[18px] bg-white" />
+                        <div className="w-px 2xl:h-[21px] lg:h-[18px] h-[12px] bg-white" />
                         <Link className={navLinkClass} href="#">SHOP BY COLOUR</Link>
                     </nav>
 
                     {/* Right-side Icons */}
-                    <div className="flex 2xl:gap-5 gap-3 items-center">
+                    <div className="flex 2xl:gap-5 lg:gap-3 gap-2 items-center">
                         {/* Search Icon */}
                         <div className="hover:text-gray-300 transition duration-200 cursor-pointer hover:scale-110">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                strokeWidth="1.5" stroke="currentColor" className="2xl:h-[30px] 2xl:w-[30px] w-[22px] h-[22px]">
+                                strokeWidth="1.5" stroke="currentColor" className="2xl:h-[30px] 2xl:w-[30px] xl:w-[22px] xl:h-[22px] lg:w-[18px] lg:h-[18px] w-[13px] h-[13px]">
                                 <path strokeLinecap="round" strokeLinejoin="round"
                                     d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                             </svg>
                         </div>
 
 
-                        <div className="w-px h-[21px] bg-white" />
+                        <div className="w-px lg:h-[21px] h-[12px] bg-white" />
 
                         {/* Profile Icon */}
                         <div className="hover:text-gray-300 transition duration-200 cursor-pointer hover:scale-110">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                strokeWidth="1.5" stroke="currentColor" className="2xl:h-[30px] 2xl:w-[30px] w-[22px] h-[22px]">
+                                strokeWidth="1.5" stroke="currentColor" className="2xl:h-[30px] 2xl:w-[30px] xl:w-[22px] xl:h-[22px] lg:w-[18px] lg:h-[18px] w-[13px] h-[13px]">
                                 <path strokeLinecap="round" strokeLinejoin="round"
                                     d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                             </svg>
                         </div>
 
 
-                        <div className="w-px h-[21px] bg-white" />
+                        <div className="w-px lg:h-[21px] h-[12px] bg-white" />
 
                         {/* Shopping Bag with Plus Icon */}
-                        <div className="relative inline-block 2xl:h-[30px] 2xl:w-[30px] w-[22px] h-[22px] transition-transform duration-200 hover:scale-110 cursor-pointer">
+                        <div className="relative inline-block 2xl:h-[30px] 2xl:w-[30px] xl:w-[22px] xl:h-[22px] lg:w-[18px] lg:h-[18px] w-[13px] h-[13px] transition-transform duration-200 hover:scale-110 cursor-pointer">
                             {/* Bag Icon */}
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 xmlnsXlink="http://www.w3.org/1999/xlink"
                                 viewBox="0 0 28 28"
-                                className="2xl:h-[30px] 2xl:w-[30px] w-[22px] h-[22px]"
+                                className="2xl:h-[30px] 2xl:w-[30px] xl:w-[22px] xl:h-[22px] lg:w-[18px] lg:h-[18px] w-[13px] h-[13px]"
                                 fill="none"
                             >
                                 <mask
@@ -108,7 +105,7 @@ export default function Header() {
 
 
                         {/* USD Dropdown */}
-                        <div className="relative group 2xl:ml-6 ml-4 cursor-pointer">
+                        <div className="relative group 2xl:ml-6 xl:ml-4 ml-2 cursor-pointer">
                             {/* USD text + Icon */}
                             <div className="flex gap-[2px] items-center transition-colors duration-200 group-hover:text-gray-300">
                                 <h3 className={`${navLinkClass} transition-colors duration-200`}>USD</h3>
@@ -116,7 +113,7 @@ export default function Header() {
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 24 24"
                                     fill="currentColor"
-                                    className="w-[30px] h-[30px] text-white transition-colors duration-200 group-hover:text-gray-300"
+                                    className="lg:w-[30px] lg:h-[30px] h-[20px] w-[20px] text-white transition-colors duration-200 group-hover:text-gray-300"
                                     aria-hidden="true"
                                 >
                                     <path
@@ -128,10 +125,10 @@ export default function Header() {
                             </div>
 
                             {/* Dropdown menu */}
-                            <div className="absolute hidden group-hover:flex flex-col bg-white text-black rounded-md shadow-md top-[100%] right-0 z-50 2xl:min-w-[80px] min-w-[60px]">
-                                <button className="2xl:px-4 2xl:py-2 px-3 py-1 2xl:text-sm text-[12px] hover:bg-gray-100 text-left">USD</button>
-                                <button className="2xl:px-4 2xl:py-2 px-3 py-1 2xl:text-sm text-[12px] hover:bg-gray-100 text-left">EUR</button>
-                                <button className="2xl:px-4 2xl:py-2 px-3 py-1 2xl:text-sm text-[12px] hover:bg-gray-100 text-left">PKR</button>
+                            <div className="absolute hidden group-hover:flex flex-col bg-white text-black rounded-md shadow-md top-[100%] right-0 z-50 2xl:min-w-[80px] lg:min-w-[60px] min-w-[40px]">
+                                <button className="2xl:px-4 2xl:py-2 lg:px-3 px-2 py-1 2xl:text-sm lg:text-[12px] text-[8px] hover:bg-gray-100 text-left">USD</button>
+                                <button className="2xl:px-4 2xl:py-2 lg:px-3 px-2 py-1 2xl:text-sm lg:text-[12px] text-[8px] hover:bg-gray-100 text-left">EUR</button>
+                                <button className="2xl:px-4 2xl:py-2 lg:px-3 px-2 py-1 2xl:text-sm lg:text-[12px] text-[8px] hover:bg-gray-100 text-left">PKR</button>
                             </div>
                         </div>
 
@@ -141,7 +138,7 @@ export default function Header() {
 
 
             {/* Mobile Header */}
-            <div className="p-4 bg-[#1A1E21] flex items-center justify-between lg:hidden">
+            <div className="p-4 bg-[#1A1E21] flex items-center justify-between md:hidden">
                 {/* Logo */}
                 <Link href="/">
                     <Image src="/logo.svg" alt="Logo" width={180} height={50} priority />

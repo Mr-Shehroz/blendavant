@@ -42,24 +42,24 @@ const reviews = [
 
 export default function Reviews() {
     return (
-        <section className="bg-white text-black 2xl:pb-51 pb-34 2xl:pt-44 pt-29">
-            <div className="2xl:max-w-[1430px] px-30 2xl:px-0 mx-auto flex items-center 2xl:gap-9 gap-6">
-                <div className="border border-[#C5B479] bg-[#C5B479] 2xl:w-[8px] w-[6px] 2xl:h-[101px] h-[75px]" />
+        <section className="bg-white text-black 2xl:pb-51 xl:pb-34 lg:pb-26 pb-16 2xl:pt-44 xl:pt-29 lg:pt-20 pt-16">
+            <div className="2xl:max-w-[1430px] xl:px-30 lg:px-17 px-10 2xl:px-0 mx-auto flex items-center 2xl:gap-9 xl:gap-6 lg:gap-4 gap-3">
+                <div className="border border-[#C5B479] bg-[#C5B479] 2xl:w-[8px] xl:w-[6px] lg:w-[4px] w-[3px] 2xl:h-[101px] xl:h-[75px] lg:h-[55px] h-[40px]" />
                 <div className="flex flex-col gap-2">
                     <h5
-                        className={`${montserrat.className} font-medium 2xl:text-[16px] text-[13px] leading-[100%] text-black`}
+                        className={`${montserrat.className} font-medium 2xl:text-[16px] xl:text-[13px] lg:text-[11px] text-[9px] leading-[100%] text-black`}
                     >
                         MAKE YOUR WEDDING DAY EXTRA SPECIAL
                     </h5>
                     <h2
-                        className={`${comfortaa.className} font-bold 2xl:text-[64px] text-[40px] leading-[100%] text-black`}
+                        className={`${comfortaa.className} font-bold 2xl:text-[64px] xl:text-[40px] lg:text-[30px] text-[25px] leading-[100%] text-black`}
                     >
                         The love <span className="text-[#C2B173]">we received</span>
                     </h2>
                 </div>
             </div>
 
-            <div className="2xl:max-w-[1430px] px-30 2xl:px-0 mx-auto mt-13">
+            <div className="2xl:max-w-[1430px] xl:px-30 lg:px-17 px-10 2xl:px-0 mx-auto lg:mt-13 mt-6">
                 <Swiper
                     modules={[Navigation]}
                     navigation={{
@@ -78,19 +78,19 @@ export default function Reviews() {
                                         width={353}
                                         height={353}
                                         alt={`review-${index}`}
-                                        className="2xl:h-[353px] 2xl:w-[353px] h-[240px] w-[240px]"
+                                        className="2xl:h-[353px] 2xl:w-[353px] xl:h-[240px] xl:w-[240px] lg:h-[220px] lg:w-[220px] w-[180px] h-[180px]"
                                     />
                                 </div>
 
-                                <div className="2xl:max-w-[1010px] max-w-[700px] 2xl:mt-8 mt-7">
-                                    <div className="flex 2xl:gap-3 gap-2">
+                                <div className="2xl:max-w-[1010px] xl:max-w-[700px] lg:max-w-[600px] max-w-[450px] 2xl:mt-8 xl:mt-7 lg:mt-3">
+                                    <div className="flex items-center 2xl:gap-3 gap-2">
                                         <h3
-                                            className={`${montserrat.className} font-semibold 2xl:text-[26px] text-[20px] leading-[100%] text-black`}
+                                            className={`${montserrat.className} font-semibold 2xl:text-[26px] xl:text-[20px] lg:text-[18px] text-[16px] leading-[100%] text-black`}
                                         >
                                             {review.name}
                                         </h3>
                                         <Image
-                                            className="h-[22px] 2xl:w-[43px] w-[35px]"
+                                            className="h-[22px] 2xl:w-[43px] xl:w-[35px] lg:w-[30px] w-[20px]"
                                             src={review.countryFlag}
                                             height={100}
                                             width={100}
@@ -98,12 +98,12 @@ export default function Reviews() {
                                         />
                                     </div>
                                     <p
-                                        className={`${montserrat.className} font-normal 2xl:text-[20px] text-[14px] 2xl:leading-[32px] leading-[24px] text-black 2xl:mt-4 mt-2`}
+                                        className={`${montserrat.className} font-normal 2xl:text-[20px] xl:text-[14px] lg:text-[13px] text-[10px] 2xl:leading-[32px] xl:leading-[24px] lg:leading-[20px] text-black 2xl:mt-4 xl:mt-2 lg:mt-[6px] mt-1`}
                                     >
                                         {review.text}
                                     </p>
 
-                                    <div className="flex gap-2 2xl:mt-4 mt-2">
+                                    <div className="flex gap-2 2xl:mt-4 xl:mt-2 lg:mt-[6px] mt-1">
                                         {[...Array(5)].map((_, i) => (
                                             <svg
                                                 key={i}
@@ -112,7 +112,7 @@ export default function Reviews() {
                                                 viewBox="0 0 24 24"
                                                 strokeWidth="1.5"
                                                 stroke="#C2B173"
-                                                className="2xl:size-6 size-4"
+                                                className="2xl:size-6 lg:size-4 size-3"
                                             >
                                                 <path
                                                     strokeLinecap="round"
@@ -124,16 +124,16 @@ export default function Reviews() {
                                     </div>
 
                                     {/* Navigation buttons under stars */}
-                                    <div className="flex gap-3 2xl:mt-8 mt-5">
+                                    <div className="flex gap-3 2xl:mt-8 xl:mt-5 lg:mt-3 mt-2">
                                         {/* Prev Button */}
-                                        <button className="swiper-button-prev-custom 2xl:h-[34px] 2xl:w-[34px] h-[24px] w-[24px] rounded-full border border-[#C2B173] flex justify-center items-center transition duration-300 hover:bg-[#C2B173] group">
+                                        <button className="swiper-button-prev-custom 2xl:h-[34px] 2xl:w-[34px] xl:h-[24px] xl:w-[24px] lg:w-[20px] lg:h-[20px] w-[16px] h-[16px] rounded-full border border-[#C2B173] flex justify-center items-center transition duration-300 hover:bg-[#C2B173] group">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 fill="none"
                                                 viewBox="0 0 24 24"
                                                 strokeWidth="1.5"
                                                 stroke="#C2B173"
-                                                className="2xl:size-5 size-4 group-hover:stroke-white"
+                                                className="2xl:size-5 xl:size-4 lg:size-3 size-2 group-hover:stroke-white"
                                             >
                                                 <path
                                                     strokeLinecap="round"
@@ -144,14 +144,14 @@ export default function Reviews() {
                                         </button>
 
                                         {/* Next Button */}
-                                        <button className="swiper-button-next-custom 2xl:h-[34px] 2xl:w-[34px] h-[24px] w-[24px] rounded-full border border-[#C2B173] flex justify-center items-center transition duration-300 hover:bg-[#C2B173] group">
+                                        <button className="swiper-button-next-custom 2xl:h-[34px] 2xl:w-[34px] xl:h-[24px] xl:w-[24px] lg:w-[20px] lg:h-[20px] w-[16px] h-[16px] rounded-full border border-[#C2B173] flex justify-center items-center transition duration-300 hover:bg-[#C2B173] group">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 fill="none"
                                                 viewBox="0 0 24 24"
                                                 strokeWidth="1.5"
                                                 stroke="#C2B173"
-                                                className="2xl:size-5 size-4 rotate-180 group-hover:stroke-white"
+                                                className="2xl:size-5 xl:size-4 lg:size-3 size-2 rotate-180 group-hover:stroke-white"
                                             >
                                                 <path
                                                     strokeLinecap="round"
