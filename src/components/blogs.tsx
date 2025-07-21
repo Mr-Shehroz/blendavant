@@ -13,7 +13,7 @@ export default function Blog() {
 
                 <div className="box-border border-white bg-white border rounded-[10px] flex flex-col pb-4 relative">
                     <Image src="/blog-1.svg" width={400} height={400} alt="blog-1" className="w-full 2xl:h-[444px] xl:h-[300px] lg:h-[270px] md:h-[200px] h-[180px]" />
-                    <button className="absolute 2xl:bottom-43 xl:bottom-37 lg:bottom-30 md:bottom-24 bottom-25 right-1 bg-white hover:bg-black 2xl:h-[110px] 2xl:w-[130px] xl:h-[80px] xl:w-[80px] lg:w-[70px] lg:h-[70px] h-[50px] w-[50px] rounded-[8px] 2xl:rounded-[10px] flex justify-center items-center transition duration-300 hover:scale-105 group">
+                    <button className="absolute 2xl:bottom-43 xl:bottom-37 lg:bottom-30 md:bottom-24 bottom-31 right-0 bg-white hover:bg-black 2xl:h-[110px] 2xl:w-[130px] xl:h-[80px] xl:w-[80px] lg:w-[70px] lg:h-[70px] h-[50px] w-[50px] rounded-[8px] 2xl:rounded-[10px] flex justify-center items-center transition duration-300 hover:scale-105 group">
 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" className="2xl:size-14 xl:size-10 lg:size-8 size-6 transition duration-300 group-hover:stroke-white">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
@@ -47,7 +47,7 @@ export default function Blog() {
                 </div>
                 <div className="box-border border-white bg-white border rounded-[10px] flex flex-col pb-4 relative">
                     <Image src="/blog-2.svg" width={400} height={400} alt="blog-2" className="w-full 2xl:h-[444px] xl:h-[300px] lg:h-[270px] md:h-[200px] h-[180px]" />
-                    <button className="absolute 2xl:bottom-43 xl:bottom-37 lg:bottom-30 md:bottom-24 bottom-25 right-1 bg-white hover:bg-black 2xl:h-[110px] 2xl:w-[130px] xl:h-[80px] xl:w-[80px] lg:w-[70px] lg:h-[70px] h-[50px] w-[50px] rounded-[8px] 2xl:rounded-[10px] flex justify-center items-center transition duration-300 hover:scale-105 group">
+                    <button className="absolute 2xl:bottom-43 xl:bottom-37 lg:bottom-30 md:bottom-24 bottom-31 right-0 bg-white hover:bg-black 2xl:h-[110px] 2xl:w-[130px] xl:h-[80px] xl:w-[80px] lg:w-[70px] lg:h-[70px] h-[50px] w-[50px] rounded-[8px] 2xl:rounded-[10px] flex justify-center items-center transition duration-300 hover:scale-105 group">
 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" className="2xl:size-14 xl:size-10 lg:size-8 size-6 transition duration-300 group-hover:stroke-white">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
