@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Hero() {
     return (
         <section className="flex flex-col md:flex-row justify-center items-center">
-            <div className="absolute 2xl:-bottom-39 xl:-bottom-27 lg:-bottom-23 md:-bottom-14 bottom-20  2xl:-left-10 xl:-left-6 lg:-left-5 md:-left-4 w-full flex justify-center items-end z-50">
+            <div className="sm:hidden md:block absolute 2xl:-bottom-39 xl:-bottom-27 lg:-bottom-23 md:-bottom-14 bottom-20  2xl:-left-10 xl:-left-6 lg:-left-5 md:-left-4 w-full flex justify-center items-end z-50">
                 <Image className="2xl:w-[468px] xl:w-[320px] lg:w-[280px] w-[170px]" src="/hero-scroll.svg" width={100} height={100} alt="scroll" />
             </div>
             <div className="bg-gradient-to-b from-[#393C3F] to-[#1A1E21] md:h-screen pb-15 md:w-[89%] w-full text-white">
