@@ -138,16 +138,16 @@ export default function Header() {
 
 
             {/* Mobile Header */}
-            <div className="p-4 bg-[#1A1E21] flex items-center justify-between md:hidden">
+            <div className="sm:px-8 px-2 py-2 flex items-center justify-between md:hidden">
                 {/* Logo */}
                 <Link href="/">
-                    <Image src="/logo.svg" alt="Logo" width={180} height={50} priority />
+                    <Image className="sm:w-[150px] h-[40px] w-[100px]" src="/logo.svg" alt="Logo" width={180} height={50} priority />
                 </Link>
 
                 {/* Hamburger Icon */}
                 <button onClick={() => setMenuOpen(!menuOpen)} className="text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor" strokeWidth={1.5} className="w-7 h-7">
+                        stroke="currentColor" strokeWidth={1.5} className="w-6 h-6">
                         {menuOpen ? (
                             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                         ) : (
@@ -158,7 +158,7 @@ export default function Header() {
             </div>
 
             {menuOpen && (
-                <div className="md:hidden bg-[#2A2D30] p-4 flex flex-col gap-4 text-white">
+                <div className="md:hidden bg-[#2A2D30] p-4 flex flex-col items-center justify-center gap-4 text-white">
                     <Link href="#" className={navLinkClass}>SHOP ALL</Link>
                     <Link href="#" className={navLinkClass}>SHOP BY THEME</Link>
                     <Link href="#" className={navLinkClass}>SHOP BY COLOUR</Link>

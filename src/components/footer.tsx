@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className="bg-gradient-to-b from-[#393C3F] to-[#1A1E21] text-white 2xl:pb-3 lg:pb-2 pb-1 2xl:pt-26 xl:pt-16 pt-14">
-            <div className="2xl:max-w-[1468px] xl:px-30 lg:px-17 px-10 2xl:px-0 mx-auto">
+        <footer className="bg-gradient-to-b from-[#393C3F] to-[#1A1E21] text-white 2xl:pb-3 lg:pb-2 sm:pb-1 pb-3 2xl:pt-26 xl:pt-16 pt-14">
+            <div className="2xl:max-w-[1468px] xl:px-30 lg:px-17 sm:px-10 px-2 2xl:px-0 mx-auto">
 
                 <Image className="2xl:w-[287px] 2xl:h-[104px] xl:w-[205px] xl:h-[80px] lg:w-[180px] lg:h-[70px] w-[140px] h-[50px]" src="/logo.svg" width={100} height={100} alt="logo" />
-                <div className="flex justify-between items-start">
+                <div className="flex flex-col sm:flex-row sm:justify-between justify-center gap-5 items-start">
 
                     <div>
                         <h4 className={`${comfortaa.className} font-bold text-[#798290] 2xl:text-[18px] xl:text-[13px] lg:text-[11px] text-[9px] leading-[100%] 2xl:mt-3 xl:mt-1`}>Subscribe To Our Newsletter</h4>
@@ -24,28 +24,28 @@ export default function Footer() {
 
                     <div>
                         <h3 className={`${comfortaa.className} font-bold 2xl:text-[26px] xl:text-[20px] lg:text-[18px] text-[16px] leading-[100%] text-white`}>Contact us</h3>
-                        <h5 className={`${montserrat.className} font-medium 2xl:text-[15px] xl:text-[11px] lg:text-[10px] text-[8px] 2xl:leading-[27px] lg:leading-[18px] text-white 2xl:mt-7 xl:mt-4 lg:mt-3 mt-2`}>hello@blendavant.com</h5>
-                        <h5 className={`${montserrat.className} font-medium 2xl:text-[15px] xl:text-[11px] lg:text-[10px] text-[8px] 2xl:leading-[27px] leading-[18px] text-white xl:mt-1`}>+ 61 432 230 055</h5>
+                        <h5 className={`${montserrat.className} font-medium 2xl:text-[15px] xl:text-[11px] lg:text-[10px] text-[8px] 2xl:leading-[27px] lg:leading-[18px] text-white 2xl:mt-7 xl:mt-4 lg:mt-3 sm:mt-2 mt-4`}>hello@blendavant.com</h5>
+                        <h5 className={`${montserrat.className} font-medium 2xl:text-[15px] xl:text-[11px] lg:text-[10px] text-[8px] 2xl:leading-[27px] leading-[18px] text-white xl:mt-1 sm:mt-0 mt-1`}>+ 61 432 230 055</h5>
                     </div>
                     <div>
                         <h3 className={`${comfortaa.className} font-bold 2xl:text-[26px] xl:text-[20px] lg:text-[18px] text-[16px] leading-[100%] text-white`}>Address</h3>
-                        <h5 className={`${montserrat.className} font-medium 2xl:text-[15px] xl:text-[11px] lg:text-[10px] text-[8px] 2xl:leading-[27px] leading-[18px] text-white 2xl:mt-7 xl:mt-4 lg:mt-3 mt-2`}>35 Avenell Street, Wishart </h5>
-                        <h5 className={`${montserrat.className} font-medium 2xl:text-[15px] xl:text-[11px] lg:text-[10px] text-[8px] 2xl:leading-[27px] leading-[18px] text-white xl:mt-1`}>QLD, 4122</h5>
+                        <h5 className={`${montserrat.className} font-medium 2xl:text-[15px] xl:text-[11px] lg:text-[10px] text-[8px] 2xl:leading-[27px] leading-[18px] text-white 2xl:mt-7 xl:mt-4 lg:mt-3 sm:mt-2 mt-4`}>35 Avenell Street, Wishart </h5>
+                        <h5 className={`${montserrat.className} font-medium 2xl:text-[15px] xl:text-[11px] lg:text-[10px] text-[8px] 2xl:leading-[27px] leading-[18px] text-white xl:mt-1 sm:mt-0 mt-1`}>QLD, 4122</h5>
                     </div>
                     <div className="flex flex-col">
                         <h3 className={`${comfortaa.className} font-bold 2xl:text-[26px] xl:text-[20px] lg:text-[18px] text-[16px] leading-[100%] text-white`}>Help Section</h3>
-                        <Link href="#" className={`${montserrat.className} font-medium 2xl:text-[15px] xl:text-[11px] lg:text-[10px] text-[8px] 2xl:leading-[27px] leading-[18px] text-white 2xl:mt-7 xl:mt-4 lg:mt-3 mt-2 transition duration-300 hover:text-[#C2B173] hover:underline`}>Contact Us</Link>
-                        <Link href="#" className={`${montserrat.className} font-medium 2xl:text-[15px] xl:text-[11px] lg:text-[10px] text-[8px] 2xl:leading-[27px] leading-[18px] text-white xl:mt-1 transition duration-300 hover:text-[#C2B173] hover:underline`}>Shipping Policy</Link>
-                        <Link href="#" className={`${montserrat.className} font-medium 2xl:text-[15px] xl:text-[11px] lg:text-[10px] text-[8px] 2xl:leading-[27px] leading-[18px] text-white xl:mt-1 transition duration-300 hover:text-[#C2B173] hover:underline`}>Refunds & Returns</Link>
-                        <Link href="#" className={`${montserrat.className} font-medium 2xl:text-[15px] xl:text-[11px] lg:text-[10px] text-[8px] 2xl:leading-[27px] leading-[18px] text-white xl:mt-1 transition duration-300 hover:text-[#C2B173] hover:underline`}>Privacy Policy</Link>
-                        <Link href="#" className={`${montserrat.className} font-medium 2xl:text-[15px] xl:text-[11px] lg:text-[10px] text-[8px] 2xl:leading-[27px] leading-[18px] text-white xl:mt-1 transition duration-300 hover:text-[#C2B173] hover:underline`}>Terms of Service</Link>
-                        <Link href="#" className={`${montserrat.className} font-medium 2xl:text-[15px] xl:text-[11px] lg:text-[10px] text-[8px] 2xl:leading-[27px] leading-[18px] text-white xl:mt-1 transition duration-300 hover:text-[#C2B173] hover:underline`}>Billing Terms And Conditions</Link>
+                        <Link href="#" className={`${montserrat.className} font-medium 2xl:text-[15px] xl:text-[11px] lg:text-[10px] text-[8px] 2xl:leading-[27px] leading-[18px] text-white 2xl:mt-7 xl:mt-4 lg:mt-3 sm:mt-2 mt-4 transition duration-300 hover:text-[#C2B173] hover:underline`}>Contact Us</Link>
+                        <Link href="#" className={`${montserrat.className} font-medium 2xl:text-[15px] xl:text-[11px] lg:text-[10px] text-[8px] 2xl:leading-[27px] leading-[18px] text-white xl:mt-1 sm:mt-0 mt-1 transition duration-300 hover:text-[#C2B173] hover:underline`}>Shipping Policy</Link>
+                        <Link href="#" className={`${montserrat.className} font-medium 2xl:text-[15px] xl:text-[11px] lg:text-[10px] text-[8px] 2xl:leading-[27px] leading-[18px] text-white xl:mt-1 sm:mt-0 mt-1 transition duration-300 hover:text-[#C2B173] hover:underline`}>Refunds & Returns</Link>
+                        <Link href="#" className={`${montserrat.className} font-medium 2xl:text-[15px] xl:text-[11px] lg:text-[10px] text-[8px] 2xl:leading-[27px] leading-[18px] text-white xl:mt-1 sm:mt-0 mt-1 transition duration-300 hover:text-[#C2B173] hover:underline`}>Privacy Policy</Link>
+                        <Link href="#" className={`${montserrat.className} font-medium 2xl:text-[15px] xl:text-[11px] lg:text-[10px] text-[8px] 2xl:leading-[27px] leading-[18px] text-white xl:mt-1 sm:mt-0 mt-1 transition duration-300 hover:text-[#C2B173] hover:underline`}>Terms of Service</Link>
+                        <Link href="#" className={`${montserrat.className} font-medium 2xl:text-[15px] xl:text-[11px] lg:text-[10px] text-[8px] 2xl:leading-[27px] leading-[18px] text-white xl:mt-1 sm:mt-0 mt-1 transition duration-300 hover:text-[#C2B173] hover:underline`}>Billing Terms And Conditions</Link>
                     </div>
                 </div>
 
                 <div className="w-full h-[1px] bg-white 2xl:mt-12 xl:mt-7 lg:mt-5 mt-3" />
 
-                <div className="flex justify-between items-center 2xl:mt-4 lg:mt-2 mt-1">
+                <div className="flex flex-col sm:flex-row sm:justify-between justify-center gap-2 sm:gap-0 items-center 2xl:mt-4 lg:mt-2 sm:mt-1 mt-4">
 
                     <div className="flex 2xl:gap-4 lg:gap-3 gap-1">
                         <div className="transition duration-300 hover:scale-110 hover:brightness-125 cursor-pointer">
