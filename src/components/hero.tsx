@@ -16,7 +16,7 @@ export default function Hero() {
                     <div className="border border-[#A1A1A1] md:w-[70%] w-[80%] mx-auto md:mx-0 2xl:mt-11 lg:mt-6 mt-4" />
                 </div>
 
-                <div className="flex md:justify-between justify-center gap-10 px-2 items-center sm:text-start text-center 2xl:mt-13 lg:mt-9 mt-6 2xl:max-w-[630px] lg:px-17 md:px-10 sm:px-13 2xl:px-0 mx-auto">
+                <div className="flex md:justify-between justify-center gap-10 px-2 ts:px-4 items-center sm:text-start text-center 2xl:mt-13 lg:mt-9 mt-6 2xl:max-w-[630px] lg:px-17 md:px-10 sm:px-13 2xl:px-0 mx-auto">
 
                     <div className="flex flex-col md:items-start items-center">
                         <h2 className={`${comfortaa.className} font-bold 2xl:text-[64px] xl:text-[40px] lg:text-[30px] md:text-[20px] text-[18px] leading-[100%] text-[#C2B173] 2xl:mb-4 lg:mb-3 mb-2`}>750+</h2>
@@ -31,7 +31,7 @@ export default function Hero() {
                 </div>
                 <div className="max-w-[630px] mx-auto text-center md:text-start 2xl:mt-12 lg:mt-8 mt-5 lg:px-17 md:px-10 sm:px-13 2xl:px-0">
                     <button
-                        className={`bg-white text-black xl:px-2 px-1 xl:py-4 lg:py-3 py-2 2xl:w-[279px] xl:w-[180px] lg:w-[150px] md:w-[120px] md:w-[100px] w-[130px] rounded-[5px] ${montserrat.className} 2xl:text-[18px] xl:text-[12px] lg:text-[10px] md:text-[8px] text-[7px] font-medium leading-[100%] transition duration-300 hover:bg-black hover:text-white hover:scale-105`}
+                        className={`bg-white text-black xl:px-2 px-1 xl:py-4 lg:py-3 py-2 2xl:w-[279px] xl:w-[180px] lg:w-[150px] md:w-[120px] sm:w-[100px] w-[130px] rounded-[5px] ${montserrat.className} 2xl:text-[18px] xl:text-[12px] lg:text-[10px] md:text-[8px] text-[7px] font-medium leading-[100%] transition duration-300 hover:bg-black hover:text-white hover:scale-105`}
                     >
                         SHOP ALL DECORATIONS
                     </button>

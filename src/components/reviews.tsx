@@ -43,7 +43,7 @@ const reviews = [
 export default function Reviews() {
     return (
         <section className="bg-white text-black 2xl:pb-51 xl:pb-34 lg:pb-26 pb-16 2xl:pt-44 xl:pt-29 lg:pt-20 pt-16">
-            <div className="2xl:max-w-[1430px] xl:px-30 lg:px-17 sm:px-10 px-2 2xl:px-0 mx-auto flex items-center 2xl:gap-9 xl:gap-6 lg:gap-4 sm:gap-3 gap-2">
+            <div className="2xl:max-w-[1430px] xl:px-30 lg:px-17 sm:px-10 px-2 ts:px-4 2xl:px-0 mx-auto flex items-center 2xl:gap-9 xl:gap-6 lg:gap-4 sm:gap-3 gap-2">
                 <div className="border border-[#C5B479] bg-[#C5B479] 2xl:w-[8px] xl:w-[6px] lg:w-[4px] w-[3px] 2xl:h-[101px] xl:h-[75px] lg:h-[55px] sm:h-[40px] h-[35px]" />
                 <div className="flex flex-col gap-2">
                     <h5
@@ -59,7 +59,7 @@ export default function Reviews() {
                 </div>
             </div>
 
-            <div className="2xl:max-w-[1430px] xl:px-30 lg:px-17 sm:px-10 px-2 2xl:px-0 mx-auto lg:mt-13 mt-6">
+            <div className="2xl:max-w-[1430px] xl:px-30 lg:px-17 sm:px-10 px-2 ts:px-4 2xl:px-0 mx-auto lg:mt-13 mt-6">
                 <Swiper
                     modules={[Navigation]}
                     navigation={{
@@ -82,7 +82,7 @@ export default function Reviews() {
                                     />
                                 </div>
 
-                                <div className="2xl:max-w-[1010px] xl:max-w-[700px] lg:max-w-[600px] md:max-w-[450px] max-w-[370px] 2xl:mt-8 xl:mt-7 lg:mt-3 text-center sm:text-start mt-5 sm:mt-0">
+                                <div className="2xl:max-w-[1010px] ex:max-w-[800px] exx:max-w-[860px] xl:max-w-[700px] lg:max-w-[600px] md:max-w-[450px] max-w-[370px] 2xl:mt-8 xl:mt-7 lg:mt-3 text-center sm:text-start mt-5 sm:mt-0">
                                     <div className="flex justify-center sm:justify-start items-center 2xl:gap-3 gap-2">
                                         <h3
                                             className={`${montserrat.className} font-semibold 2xl:text-[26px] xl:text-[20px] lg:text-[18px] text-[16px] leading-[100%] text-black`}

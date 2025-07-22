@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Shipping() {
     return (
         <section className="bg-[#F8F8F8] text-black lg:pb-20 pb-10">
-            <div className="2xl:max-w-[1430px] 2xl:px-0 xl:px-30 lg:px-17 sm:px-10 px-2 mx-auto">
+            <div className="2xl:max-w-[1430px] 2xl:px-0 xl:px-30 lg:px-17 sm:px-10 px-2 ts:px-4 mx-auto">
                 <div className="flex sm:items-center items-start sm:justify-between justify-center gap-6 2xl:pt-55 lg:pt-35 pt-25">
                     <div className="flex 2xl:gap-9 xl:gap-6 lg:gap-4 sm:gap-3 gap-2 items-center 2xl:max-w-[1120px] xl:max-w-[800px] sm:max-w-[500px] max-w-[2500px]">
                         <div className="border border-[#C5B479] bg-[#C5B479] 2xl:w-[8px] xl:w-[6px] w-[4px] 2xl:h-[139px] xl:h-[100px] lg:h-[90px] sm:h-[70px] h-[50px]"/>

@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Footer() {
     return (
         <footer className="bg-gradient-to-b from-[#393C3F] to-[#1A1E21] text-white 2xl:pb-3 lg:pb-2 sm:pb-1 pb-3 2xl:pt-26 xl:pt-16 pt-14">
-            <div className="2xl:max-w-[1468px] xl:px-30 lg:px-17 sm:px-10 px-2 2xl:px-0 mx-auto">
+            <div className="2xl:max-w-[1468px] xl:px-30 lg:px-17 sm:px-10 px-2 ts:px-4 2xl:px-0 mx-auto">
 
                 <Image className="2xl:w-[287px] 2xl:h-[104px] xl:w-[205px] xl:h-[80px] lg:w-[180px] lg:h-[70px] w-[140px] h-[50px]" src="/logo.svg" width={100} height={100} alt="logo" />
                 <div className="flex flex-col sm:flex-row sm:justify-between justify-center gap-5 items-start">

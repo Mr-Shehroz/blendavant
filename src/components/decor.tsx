@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Decor() {
     return (
         <section className="bg-white lg:pb-20 pb-10 text-black 2xl:pt-54 lg:pt-34 pt-20">
-            <div className="2xl:max-w-[1430px] xl:px-30 lg:px-17 sm:px-10 px-2 2xl:px-0 mx-auto flex 2xl:gap-9 xl:gap-6 lg:gap-4 sm:gap-3 gap-2">
+            <div className="2xl:max-w-[1430px] xl:px-30 lg:px-17 sm:px-10 px-2 ts:px-4 2xl:px-0 mx-auto flex 2xl:gap-9 xl:gap-6 lg:gap-4 sm:gap-3 gap-2">
                 <div className="border border-[#C5B479] bg-[#C5B479] 2xl:w-[8px] xl:w-[6px] lg:w-[4px] w-[3px] 2xl:h-[79px] xl:h-[55px] lg:h-[50px] sm:h-[40px] h-[35px]" />
                 <div className="flex flex-col gap-2">
                     <h5 className={`${montserrat.className} font-medium 2xl:text-[16px] xl:text-[13px] lg:text-[11px] sm:text-[9px] text-[8px] leading-[100%] test-black`}>REVOLUTIONISING THE WEDDING DECOR INDUSTRY</h5>
@@ -13,14 +13,14 @@ export default function Decor() {
                 </div>
             </div>
 
-            <div className="2xl:max-w-[1430px] xl:px-30 lg:px-17 sm:px-10 px-2 2xl:px-0 mx-auto mt-11 flex flex-col sm:flex-row sm:justify-between justify-center sm:items-end items-center gap-8 sm:gap-0">
+            <div className="2xl:max-w-[1430px] xl:px-30 lg:px-17 sm:px-10 px-2 ts:px-4 2xl:px-0 mx-auto mt-11 flex flex-col sm:flex-row sm:justify-between justify-center sm:items-end items-center gap-8 sm:gap-0">
 
                 <div className="relative w-full">
                     <Image className="absolute 2xl:left-140 xl:left-95 lg:left-80 md:left-60 sm:left-50 right-10 2xl:top-37 xl:top-29 lg:top-10 sm:top-6 -bottom-15 2xl:w-[327px] 2xl:h-[296px] xl:w-[223px] xl:h-[250px] lg:w-[180px] lg:h-[200px] md:w-[100px] md:h-[140px] w-[80px] h-[120px]" src="/decor-2.svg" width={1000} height={1000} alt="decor-2" />
                     <Image className="2xl:w-[760px] 2xl:h-[577px] xl:w-[508px] xl:h-[480px] lg:w-[400px] lg:h-[300px] md:w-[300px] md:h-[200px] sm:w-[250px] h-[180px]" src="/decor-1.svg" width={1000} height={1000} alt="decor-1" />
                 </div>
 
-                <div className="w-full mx-auto 2xl:max-w-[471px] lg:max-w-[340px] md:max-w-[300px] max-w-[250px] xl:mt-23 lg:mt-14 mt-6">
+                <div className="w-full mx-auto 2xl:max-w-[471px] ex:max-w-[350px] ex:mr-24 exx:mr-38 2xl:mr-0 lg:max-w-[340px] md:max-w-[300px] max-w-[250px] 2xl:mt-23 ex:mb-18 xl:mb-17 lg:mb-10 mt-6">
                     <h3 className={`${montserrat.className} font-semibold 2xl:text-[26px] xl:text-[20px] lg:text-[18px] text-[16px] leading-[100%] text-black`}>Nancy Acrylic Wedding Signs</h3>
                     <h3 className={`${montserrat.className} font-semibold 2xl:text-[26px] xl:text-[20px] lg:text-[18px] text-[16px] leading-[100%] text-black 2xl:mt-14 xl:mt-9 lg:mt-6 md:mt-4 mt-2`}>$225.00 USD</h3>
                     <h5 className={`${montserrat.className} font-normal  2xl:text-[20px] xl:text-[14px] lg:text-[12px] text-[10px] lg:leading-[32px] leading-[24px] text-[#959595] 2xl:mt-2 mt-0`}>Special Price</h5>
@@ -54,7 +54,7 @@ export default function Decor() {
                     </div>
                 </div>
             </div>
-            <div className="2xl:max-w-[1430px] lg:px-30 sm:px-10 px-2 2xl:px-0 mx-auto lg:mt-20 mt-14">
+            <div className="2xl:max-w-[1430px] lg:px-30 sm:px-10 px-2 ts:px-4 2xl:px-0 mx-auto lg:mt-20 mt-14">
                 <div className="border border-[#959595] w-full" />
 
                 <div className="flex justify-between 2xl:mt-10 lg:mt-7 mt-5">

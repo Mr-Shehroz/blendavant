@@ -138,7 +138,7 @@ export default function Header() {
 
 
             {/* Mobile Header */}
-            <div className="sm:px-8 px-2 py-2 flex items-center justify-between md:hidden">
+            <div className="sm:px-8 px-2 ts:px-4 py-2 flex items-center justify-between md:hidden">
                 {/* Logo */}
                 <Link href="/">
                     <Image className="sm:w-[150px] h-[40px] w-[100px]" src="/logo.svg" alt="Logo" width={180} height={50} priority />
