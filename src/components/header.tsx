@@ -4,6 +4,7 @@ import { useState } from "react";
 import { montserrat } from "@/fonts";
 import Image from "next/image";
 import Link from "next/link";
+import { motion,AnimatePresence } from "framer-motion";
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +12,10 @@ export default function Header() {
 
     return (
         <div className="fixed top-0 left-0 w-full z-50">
-            <header className="hidden md:flex 2xl:max-w-[1628px] pt-1 lg:pt-0 lg:pl-17 pl-10 2xl:pl-0 mx-auto justify-between items-center px-3">
+            <motion.header
+                initial={{ opacity: 0, y: -30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut" }} className="hidden md:flex 2xl:max-w-[1628px] pt-1 lg:pt-0 lg:pl-17 pl-10 2xl:pl-0 mx-auto justify-between items-center px-3">
                 {/* Logo */}
                 <Link href="#">
                     <img
@@ -134,7 +138,7 @@ export default function Header() {
 
                     </div>
                 </div>
-            </header>
+            </motion.header>
 
 
             {/* Mobile Header */}
@@ -157,20 +161,30 @@ export default function Header() {
                 </button>
             </div>
 
-            {menuOpen && (
-                <div className="md:hidden bg-[#2A2D30] p-4 flex flex-col items-center justify-center gap-4 text-white">
-                    <Link href="#" className={navLinkClass}>SHOP ALL</Link>
-                    <Link href="#" className={navLinkClass}>SHOP BY THEME</Link>
-                    <Link href="#" className={navLinkClass}>SHOP BY COLOUR</Link>
-                    <div className="border-t border-white/20 my-2"></div>
-                    <div className="flex gap-6">
-                        <span className="hover:text-gray-300">Search</span>
-                        <span className="hover:text-gray-300">Profile</span>
-                        <span className="hover:text-gray-300">Cart</span>
-                        <span className="hover:text-gray-300">USD</span>
-                    </div>
-                </div>
-            )}
+            <AnimatePresence>
+                {menuOpen && (
+                    <motion.div
+                        key="mobileMenu"
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -20 }}
+                        transition={{ duration: 0.3, ease: "easeOut" }}
+                        className="md:hidden bg-[#2A2D30] p-4 flex flex-col items-center justify-center gap-4 text-white"
+                    >
+                        <Link href="#" className={navLinkClass}>SHOP ALL</Link>
+                        <Link href="#" className={navLinkClass}>SHOP BY THEME</Link>
+                        <Link href="#" className={navLinkClass}>SHOP BY COLOUR</Link>
+                        <div className="border-t border-white/20 my-2"></div>
+                        <div className="flex gap-6">
+                            <span className="hover:text-gray-300">Search</span>
+                            <span className="hover:text-gray-300">Profile</span>
+                            <span className="hover:text-gray-300">Cart</span>
+                            <span className="hover:text-gray-300">USD</span>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+
         </div>
     );
 }

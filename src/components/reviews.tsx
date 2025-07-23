@@ -4,6 +4,7 @@ import { comfortaa, montserrat } from "@/fonts";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -42,10 +43,25 @@ const reviews = [
 
 export default function Reviews() {
     return (
-        <section className="bg-white text-black 2xl:pb-51 xl:pb-34 lg:pb-26 pb-16 2xl:pt-44 xl:pt-29 lg:pt-20 pt-16">
+        <motion.section
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="bg-white text-black 2xl:pb-51 xl:pb-34 lg:pb-26 pb-16 2xl:pt-44 xl:pt-29 lg:pt-20 pt-16">
             <div className="2xl:max-w-[1430px] xl:px-30 lg:px-17 sm:px-10 px-2 ts:px-4 2xl:px-0 mx-auto flex items-center 2xl:gap-9 xl:gap-6 lg:gap-4 sm:gap-3 gap-2">
-                <div className="border border-[#C5B479] bg-[#C5B479] 2xl:w-[8px] xl:w-[6px] lg:w-[4px] w-[3px] 2xl:h-[101px] xl:h-[75px] lg:h-[55px] sm:h-[40px] h-[35px]" />
-                <div className="flex flex-col gap-2">
+                <motion.div
+                    initial={{ scaleY: 0 }}
+                    whileInView={{ scaleY: 1 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true }}
+                    className="border border-[#C5B479] bg-[#C5B479] 2xl:w-[8px] xl:w-[6px] lg:w-[4px] w-[3px] 2xl:h-[101px] xl:h-[75px] lg:h-[55px] sm:h-[40px] h-[35px]" />
+                <motion.div
+                    initial={{ opacity: 0, x: -40 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                    className="flex flex-col gap-2">
                     <h5
                         className={`${montserrat.className} font-medium 2xl:text-[16px] xl:text-[13px] lg:text-[11px] sm:text-[9px] text-[8px] leading-[100%] text-black`}
                     >
@@ -56,7 +72,7 @@ export default function Reviews() {
                     >
                         The love <span className="text-[#C2B173]">we received</span>
                     </h2>
-                </div>
+                </motion.div>
             </div>
 
             <div className="2xl:max-w-[1430px] xl:px-30 lg:px-17 sm:px-10 px-2 ts:px-4 2xl:px-0 mx-auto lg:mt-13 mt-6">
@@ -71,7 +87,12 @@ export default function Reviews() {
                 >
                     {reviews.map((review, index) => (
                         <SwiperSlide key={index}>
-                            <div className="flex flex-col sm:flex-row sm:justify-between justify-center items-center">
+                            <motion.div
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6, delay: index * 0.2 }}
+                                viewport={{ once: true }}
+                                className="flex flex-col sm:flex-row sm:justify-between justify-center items-center">
                                 <div>
                                     <Image
                                         src={review.image}
@@ -163,11 +184,11 @@ export default function Reviews() {
 
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
                         </SwiperSlide>
                     ))}
                 </Swiper>
             </div>
-        </section>
+        </motion.section>
     );
 }

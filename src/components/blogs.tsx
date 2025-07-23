@@ -1,17 +1,39 @@
+"use client"
 import { comfortaa, montserrat } from "@/fonts";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Blog() {
     return (
-        <section className="bg-[#F8F8F8] text-black 2xl:pt-43 xl:pt-29 lg:pt-24 pt-18 2xl:pb-44 xl:pb-30 lg:pb-20 pb-12">
-            <div className="2xl:max-w-[1430px] xl:px-30 lg:px-17 sm:px-10 px-2 ts:px-4 2xl:px-0 mx-auto flex items-center 2xl:gap-9 xl:gap-6 lg:gap-4 sm:gap-3 gap-2">
+        <motion.section
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="bg-[#F8F8F8] text-black 2xl:pt-43 xl:pt-29 lg:pt-24 pt-18 2xl:pb-44 xl:pb-30 lg:pb-20 pb-12">
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="2xl:max-w-[1430px] xl:px-30 lg:px-17 sm:px-10 px-2 ts:px-4 2xl:px-0 mx-auto flex items-center 2xl:gap-9 xl:gap-6 lg:gap-4 sm:gap-3 gap-2">
                 <div className="border border-[#C5B479] bg-[#C5B479] 2xl:w-[8px] xl:w-[6px] lg:w-[4px] w-[3px] 2xl:h-[59px] xl:h-[55px] lg:h-[45px] sm:h-[35px] h-[30px]" />
                 <h2 className={`${comfortaa.className} font-bold 2xl:text-[64px] xl:text-[40px] lg:text-[30px] sm:text-[25px] text-[18px] leading-[100%] test-black`}>Our Blogs</h2>
-            </div>
+            </motion.div>
 
-            <div className="2xl:max-w-[1440px] xl:px-30 lg:px-17 sm:px-10 px-16 2xl:px-0 mx-auto flex flex-col sm:flex-row lg:justify-between justify-center gap-5 lg:gap-0 2xl:mt-14 lg:mt-12 mt-8">
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="2xl:max-w-[1440px] xl:px-30 lg:px-17 sm:px-10 px-16 2xl:px-0 mx-auto flex flex-col sm:flex-row lg:justify-between justify-center gap-5 lg:gap-0 2xl:mt-14 lg:mt-12 mt-8">
 
-                <div className="box-border border-white bg-white border rounded-[10px] flex flex-col pb-4 relative">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.3 }}
+                    viewport={{ once: true }}
+                    className="box-border border-white bg-white border rounded-[10px] flex flex-col pb-4 relative">
                     <Image src="/blog-1.svg" width={400} height={400} alt="blog-1" className="w-full 2xl:h-[444px] ex:h-[330px] exx:h-[350px] xl:h-[300px] lg:h-[270px] md:h-[200px] h-[180px]" />
                     <button className="absolute 2xl:bottom-43 xl:bottom-37 lg:bottom-30 md:bottom-24 bottom-31 right-0 bg-white hover:bg-black 2xl:h-[110px] 2xl:w-[130px] xl:h-[80px] xl:w-[80px] lg:w-[70px] lg:h-[70px] h-[50px] w-[50px] rounded-[8px] 2xl:rounded-[10px] flex justify-center items-center transition duration-300 hover:scale-105 group">
 
@@ -44,8 +66,13 @@ export default function Blog() {
 
                     </div>
 
-                </div>
-                <div className="box-border border-white bg-white border rounded-[10px] flex flex-col pb-4 relative">
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.4 }}
+                    viewport={{ once: true }}
+                    className="box-border border-white bg-white border rounded-[10px] flex flex-col pb-4 relative">
                     <Image src="/blog-2.svg" width={400} height={400} alt="blog-2" className="w-full 2xl:h-[444px] ex:h-[330px] exx:h-[350px] xl:h-[300px] lg:h-[270px] md:h-[200px] h-[180px]" />
                     <button className="absolute 2xl:bottom-43 xl:bottom-37 lg:bottom-30 md:bottom-24 bottom-31 right-0 bg-white hover:bg-black 2xl:h-[110px] 2xl:w-[130px] xl:h-[80px] xl:w-[80px] lg:w-[70px] lg:h-[70px] h-[50px] w-[50px] rounded-[8px] 2xl:rounded-[10px] flex justify-center items-center transition duration-300 hover:scale-105 group">
 
@@ -76,8 +103,8 @@ export default function Blog() {
                         </div>
 
                     </div>
-                </div>
-            </div>
-        </section>
+                </motion.div>
+            </motion.div>
+        </motion.section>
     )
 }
